@@ -1,8 +1,10 @@
 # NFTMaker
 
-Draft
+**Table of Contents**
+- [Download and Setup](#setup-guide)
+- [API Routes](#api)
 
-## Quick start
+# Setup Guide
 
 ### Download and install dependencies
 
@@ -14,21 +16,66 @@ Draft
 
 `touch .env`
 
+### Adding required environment variables
+
 Edit the `.env` file and add the following
 
 ```
+SERVER_PORT=4000
 API_URL=
-WEB3_PRIVATE_KEY=
 WEB3_PUBLIC_KEY=
+WEB3_PRIVATE_KEY=
 CONTRACT_ADDRESS=
+IPFS_API_KEY=
+IPFS_SECRET_KEY=
+```
+- `API_URL` [Alchemy](https://www.alchemyapi.io/) Ropsten API Key
+- `WEB3_PUBLIC_KEY` Ropsten Address Public Key
+- `WEB3_PRIVATE_KEY` Ropsten Address Private Key
+- `CONTRACT_ADDRESS` NFT Creator contract deployed on Ropsten (see below to deploy)
+- `IPFS_API_KEY` [Pinata](https://pinata.cloud/) API Key
+- `IPFS_SECRET_KEY` https://pinata.cloud/ Secret Key
+
+*Note* The Ropsten address requires a some balance
+- [Ropsten Faucet #1](https://faucet.dimensions.network/)
+- [Ropsten Faucet #2](https://faucet.ropsten.be/)  
+
+### Starting Service
+
+Run `npx hardhat run scripts/deploy.js --network ropsten` to create the NFT Factory contract on Ropsten and add this to the `CONTRACT_ADDRESS` environment variable
+
+Run `node service.js` to begin the service
+
+# API
+
+### Create NFT with IPFS URI
+
+```
+POST /api/mint
 ```
 
-`API_KEY` = Alchemy HTTP Key
+Object Name| Type| Mandatory|
+----| ----|------
+address|STRING| YES
+tokenURI|STRING|YES
 
-`CONTRACT_ADDRESS` = Gets generated after deploying the contract
+### Create IPFS with JSON Payload
 
-### Creating NFTs
+```
+POST /api/ipfsUpload
+```
 
-Run `npx hardhat run scripts/deploy.js --network ropsten` to create the NFT Factory contract on Ropsten
+Object Name| Type| Mandatory|
+----| ----|------
+json|STRING| YES
 
-Run `node index` to MINT an NFT
+### Create Invoice (NFT) with JSON Payload
+
+```
+POST /api/ipfsUpload
+```
+
+Object Name| Type| Mandatory|
+----| ----|------
+address|STRING| YES
+json|STRING| YES
