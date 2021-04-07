@@ -16,6 +16,13 @@
 
 `touch .env`
 
+Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. It helps developers when building smart contracts and dApps locally before deploying to the live chain.
+
+
+```
+npm install --save-dev hardhat
+```
+
 ### Adding required environment variables
 
 Edit the `.env` file and add the following
