@@ -21,7 +21,7 @@
 Edit the `.env` file and add the following
 
 ```
-SERVER_PORT=4000
+SERVER_PORT=
 API_URL=
 WEB3_PUBLIC_KEY=
 WEB3_PRIVATE_KEY=
@@ -29,6 +29,7 @@ CONTRACT_ADDRESS=
 IPFS_API_KEY=
 IPFS_SECRET_KEY=
 ```
+- `SERVER_PORT` (OPTIONAL) Default is `4000`
 - `API_URL` [Alchemy](https://www.alchemyapi.io/) Ropsten API Key
 - `WEB3_PUBLIC_KEY` Ropsten Address Public Key
 - `WEB3_PRIVATE_KEY` Ropsten Address Private Key
@@ -36,7 +37,7 @@ IPFS_SECRET_KEY=
 - `IPFS_API_KEY` [Pinata](https://pinata.cloud/) API Key
 - `IPFS_SECRET_KEY` https://pinata.cloud/ Secret Key
 
-*Note* The Ropsten address requires a some balance
+*Note: The Ropsten address requires a some balance*
 - [Ropsten Faucet #1](https://faucet.dimensions.network/)
 - [Ropsten Faucet #2](https://faucet.ropsten.be/)  
 
