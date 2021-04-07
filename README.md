@@ -23,7 +23,12 @@ WEB3_PUBLIC_KEY=
 CONTRACT_ADDRESS=
 ```
 
+`API_KEY` = Alchemy HTTP Key
 
-Run `npx hardhat run scripts/deploy.js --network ropsten` to create the NFT Contract on Ropsten
+`CONTRACT_ADDRESS` = Gets generated after deploying the contract
+
+### Creating NFTs
+
+Run `npx hardhat run scripts/deploy.js --network ropsten` to create the NFT Factory contract on Ropsten
 
 Run `node index` to MINT an NFT
