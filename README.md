@@ -80,7 +80,7 @@ json|STRING| YES
 ### Create Invoice NFT with JSON Payload
 
 ```
-POST /api/ipfsUpload
+POST /api/ipfsUploadAndMint
 ```
 
 Object Name| Type| Mandatory|
