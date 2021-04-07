@@ -56,7 +56,7 @@ Run `node service.js` to begin the service
 
 # API
 
-### Create NFT with IPFS URI
+### Create Invoice NFT with IPFS URI
 
 ```
 POST /api/mint
@@ -67,7 +67,7 @@ Object Name| Type| Mandatory|
 address|STRING| YES
 tokenURI|STRING|YES
 
-### Create IPFS with JSON Payload
+### Upload JSON payload to IPFS and return hash
 
 ```
 POST /api/ipfsUpload
@@ -77,7 +77,7 @@ Object Name| Type| Mandatory|
 ----| ----|------
 json|STRING| YES
 
-### Create Invoice (NFT) with JSON Payload
+### Create Invoice NFT with JSON Payload
 
 ```
 POST /api/ipfsUpload
