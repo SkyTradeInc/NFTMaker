@@ -56,12 +56,23 @@ Run `node service.js` to begin the service
 
 # API
 
+### Test connectivity
+
+```
+/api/ping
+```
+
+Test connectivity to the Rest API.
+
+**Parameters:**
+NONE
+
 ### Create Invoice NFT with IPFS URI
 
 ```
 POST /api/mint
 ```
-
+**Parameters:**
 Object Name| Type| Mandatory|
 ----| ----|------
 address|STRING| YES
@@ -72,17 +83,28 @@ tokenURI|STRING|YES
 ```
 POST /api/ipfsUpload
 ```
-
+**Parameters:**
 Object Name| Type| Mandatory|
 ----| ----|------
 json|STRING| YES
+
+### Look up data in IPFS hash
+
+```
+/api/ipfs/{hash}
+```
+
+**Parameters:**
+Query Param Name| Type| Mandatory|
+----| ----|------
+hash|STRING| YES
 
 ### Create Invoice NFT with JSON Payload
 
 ```
 POST /api/ipfsUploadAndMint
 ```
-
+**Parameters:**
 Object Name| Type| Mandatory|
 ----| ----|------
 address|STRING| YES
