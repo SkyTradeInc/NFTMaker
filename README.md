@@ -41,8 +41,8 @@ IPFS_SECRET_KEY=
 - `WEB3_PUBLIC_KEY` Ropsten Address Public Key
 - `WEB3_PRIVATE_KEY` Ropsten Address Private Key
 - `CONTRACT_ADDRESS` NFT Creator contract deployed on Ropsten (see below to deploy)
-- `IPFS_API_KEY` [Pinata](https://pinata.cloud/) API Key
-- `IPFS_SECRET_KEY` https://pinata.cloud/ Secret Key
+- `IPFS_API_KEY` [Pinata.cloud](https://pinata.cloud/) API Key
+- `IPFS_SECRET_KEY` [Pinata.cloud](https://pinata.cloud/) Secret Key
 
 *Note: The Ropsten address requires a some balance*
 - [Ropsten Faucet #1](https://faucet.dimensions.network/)
