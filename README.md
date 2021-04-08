@@ -73,6 +73,7 @@ NONE
 POST /api/mint
 ```
 **Parameters:**
+
 Object Name| Type| Mandatory|
 ----| ----|------
 address|STRING| YES
@@ -84,6 +85,7 @@ tokenURI|STRING|YES
 POST /api/ipfsUpload
 ```
 **Parameters:**
+
 Object Name| Type| Mandatory|
 ----| ----|------
 json|STRING| YES
@@ -95,6 +97,7 @@ json|STRING| YES
 ```
 
 **Parameters:**
+
 Query Param Name| Type| Mandatory|
 ----| ----|------
 hash|STRING| YES
@@ -105,6 +108,7 @@ hash|STRING| YES
 POST /api/ipfsUploadAndMint
 ```
 **Parameters:**
+
 Object Name| Type| Mandatory|
 ----| ----|------
 address|STRING| YES
