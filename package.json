@@ -19,7 +19,7 @@
     "express": "^4.17.1",
     "helmet": "^4.4.1",
     "moment": "^2.29.1",
-    "mongoose": "^5.12.3",
+    "mongoose": "^5.12.4",
     "winston": "^3.3.3"
   },
   "devDependencies": {
